@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/math/"
+     xml:base="http://www.semanticweb.org/ontologies/math/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:math="http://www.semanticweb.org/ontologies/math#">
+
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/math"/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/math#MathOp"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/math#Add"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/math#Sub"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/math#Mul"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/math#Div"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/math#EasyQuestion"/>
+
+    <!-- Data Properties -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/math#hasQuestion"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/math#hasSolution"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/math#hasHint"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/math#hasTeachingHint"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/math#hasEasyQuestion"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/math#hasEasySolution"/>
+
+    <!-- Addition Questions -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#AddQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#Add"/>
+        <math:hasQuestion>What is 7 + 3?</math:hasQuestion>
+        <math:hasSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</math:hasSolution>
+        <math:hasHint>Add the two numbers together.</math:hasHint>
+        <math:hasTeachingHint>Addition combines numbers to find their total. Example: 7 + 3 = 10.</math:hasTeachingHint>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#AddQuestion2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#Add"/>
+        <math:hasQuestion>What is 5 + 6?</math:hasQuestion>
+        <math:hasSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.0</math:hasSolution>
+        <math:hasHint>Add the two numbers carefully.</math:hasHint>
+        <math:hasTeachingHint>Adding helps combine two quantities. Example: 5 + 6 = 11.</math:hasTeachingHint>
+    </owl:NamedIndividual>
+
+    <!-- Easy Addition Questions -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#AddEasyQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#EasyQuestion"/>
+        <math:hasEasyQuestion>What is 2 + 1?</math:hasEasyQuestion>
+        <math:hasEasySolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</math:hasEasySolution>
+    </owl:NamedIndividual>
+
+    <!-- Subtraction Questions -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#SubQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#Sub"/>
+        <math:hasQuestion>What is 10 - 4?</math:hasQuestion>
+        <math:hasSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.0</math:hasSolution>
+        <math:hasHint>Take away 4 from 10.</math:hasHint>
+        <math:hasTeachingHint>Subtraction finds the difference between two numbers.</math:hasTeachingHint>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#SubEasyQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#EasyQuestion"/>
+        <math:hasEasyQuestion>What is 5 - 2?</math:hasEasyQuestion>
+        <math:hasEasySolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</math:hasEasySolution>
+    </owl:NamedIndividual>
+
+    <!-- Multiplication Questions -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#MulQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#Mul"/>
+        <math:hasQuestion>What is 3 × 4?</math:hasQuestion>
+        <math:hasSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</math:hasSolution>
+        <math:hasHint>Think of repeated addition.</math:hasHint>
+        <math:hasTeachingHint>Multiplication adds a number multiple times.</math:hasTeachingHint>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#MulEasyQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#EasyQuestion"/>
+        <math:hasEasyQuestion>What is 2 × 2?</math:hasEasyQuestion>
+        <math:hasEasySolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</math:hasEasySolution>
+    </owl:NamedIndividual>
+
+    <!-- Division Questions -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#DivQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#Div"/>
+        <math:hasQuestion>What is 8 ÷ 2?</math:hasQuestion>
+        <math:hasSolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</math:hasSolution>
+        <math:hasHint>Divide 8 into 2 equal parts.</math:hasHint>
+        <math:hasTeachingHint>Division splits a quantity into equal parts.</math:hasTeachingHint>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/math#DivEasyQuestion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/math#EasyQuestion"/>
+        <math:hasEasyQuestion>What is 4 ÷ 2?</math:hasEasyQuestion>
+        <math:hasEasySolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</math:hasEasySolution>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
