@@ -28,7 +28,7 @@ To run the ITS, ensure you have the following installed:
 ### 1. Clone the Repository
 To get started, clone this repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/focuslegon/basic-arithmetic-its.git
 
 ```
 
